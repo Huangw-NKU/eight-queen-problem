@@ -87,11 +87,10 @@ class EightQueen():
     def result(self):
         self.calculate()
         self.solution_num = len(self.solutions)
-        print("There are %s solutions for the eight_queen problem." % self.solution_num)
         for i in range(self.solution_num):
             print("solution %s" % (i+1))
             print(self.solutions[i])
-
+        print("There are %s solutions for the eight_queen problem." % self.solution_num)
 
 if __name__ == '__main__':
     Chess = EightQueen()
